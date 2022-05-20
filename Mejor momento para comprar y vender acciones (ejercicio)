@@ -1,0 +1,8 @@
+n = list(map(int, input().split()))
+min_value = n[0]
+profit = 0
+for i in n:
+    if i < min_value:
+        min_value = i
+    profit = max(i - min_value,profit)
+print(profit) 
