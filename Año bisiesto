@@ -1,0 +1,7 @@
+año = int(input())
+if año % 100 > 0 and año % 4 == 0:
+    print("SI", end="")
+elif año % 100 == 0 and año % 400 == 0:
+    print("SI", end="")
+else:
+    print("NO", end="")
