@@ -1,0 +1,10 @@
+def binario(n):
+    n_sim = n//2
+    if n_sim == 0:
+        print(n % 2, end = "")
+       return n   
+    rta = binario(n_sim) 
+    print(n % 2, end ="")
+   return rta    
+n = int(input())
+binario(n)
