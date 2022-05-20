@@ -1,0 +1,14 @@
+e1 = input()
+e2 = input()
+p = e1.lower()
+p2 = e2.lower()
+balance = True
+for b in p:  
+    if b not in p2:
+        balance = False
+        break
+    
+if balance:
+    print("SI", end="")
+else:
+    print("NO", end="")
